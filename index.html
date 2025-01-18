@@ -1,147 +1,147 @@
 Delivered-To: rosaparksfree@gmail.com
-Received: by 2002:a05:6022:2214:b0:65:3237:a4ff with SMTP id bh20csp3749230lab;
-        Fri, 17 Jan 2025 16:55:22 -0800 (PST)
-X-Forwarded-Encrypted: i=4; AJvYcCWghsWmV9lcfkMIBqOH4tSWenc/cnZkAt0ZQomy/8pteerWj0SA2InnAf5G7dqo+4akHwyXH+dYgngKxsMa@gmail.com
-X-Received: by 2002:a17:90b:17d0:b0:2ee:6d04:9dac with SMTP id 98e67ed59e1d1-2f782d9eb7emr5915817a91.32.1737161721757;
-        Fri, 17 Jan 2025 16:55:21 -0800 (PST)
-ARC-Seal: i=3; a=rsa-sha256; t=1737161721; cv=pass;
+Received: by 2002:a05:6022:2214:b0:65:3237:a4ff with SMTP id bh20csp3861288lab;
+        Sat, 18 Jan 2025 00:36:21 -0800 (PST)
+X-Forwarded-Encrypted: i=4; AJvYcCUpTdxAvjajvdQyWY4bFES6iouh+T1LS/9+Gq8UFrxl9Yh6fuUseyJRzu7e3JJsGKGkw+0sc9HUQ2rKXlhf@gmail.com
+X-Received: by 2002:a05:6a00:4c83:b0:725:b347:c3cc with SMTP id d2e1a72fcca58-72dafaf7788mr8845493b3a.23.1737189380379;
+        Sat, 18 Jan 2025 00:36:20 -0800 (PST)
+ARC-Seal: i=3; a=rsa-sha256; t=1737189380; cv=pass;
         d=google.com; s=arc-20240605;
-        b=HtDXyJdfK/yR5euzlJkTO8lO3iqTdHU2JjWTvq9mdEQ6n9bNhmKLkJ9FC9aNYBycO7
-         rixB/XkAkr/FVqqPDvcimfMq8rhd9VYNx4zwaoTcXCdmN6QTLAoW17imVs01ZaW7HYHQ
-         88sZMa4RqMmbvQrUdQxPW+1JkVlJL5xrIc+I7GgEohfFIuYosOMGO3PXGsbpa+fWUAbj
-         cUczLWpQ33ngJd3BlUhkLXSXtkUyE2mW8ZoY0hvGLtdU/yLRSsS6xg59vw+gTZ9PG6xj
-         7dlP/sQxd9jNqvuOHjMH7JfhO5otsiKU1dupsB8pIzrSZfw3pZrr2gV1kF8sIsoPgSUL
-         Qz2w==
+        b=I3mm/fUfG0Tk13TjHXmkVn+PKvb+cHSJGbVIE9+88X5Yo0x2vyIikI0Kji22MCecTa
+         z8qFrkBONsYY5VjJJYsyqsqxwlpZT7toASoILcda2nrJJX/Y0QqzbS38lUz3aoWmSpXk
+         os2Ae7XSVQeyvt+6kDM4ZiWlOK4aKeT1v4IvOdTSSokeISIbenTbofEmncBPU4RBr4Zh
+         GzQPfYn83ij7QYwJcb12KOkZSiv+S+Ls7JTNJwaHdqeSCXnfpW++cvQSn39eSv4ZpXfl
+         nMpoqIDJ+gwiQAg3viOaoJdPR3+tzmeYRh5EdBQmXop8hlpA7OiquRzvh0UDzn0LZ+5G
+         dSkg==
 ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
         h=content-transfer-encoding:importance:subject:date:to:reply-to:from
          :mime-version:dkim-signature:message-id:delivered-to;
         bh=QPmSASiIrTSiYiTGpo4oJtD3dP+Ex23gIOkC7bzRKGE=;
-        fh=gxS1ot9FdTvN4ihx/9vVwCvIUcKGAFZL7dCjb7HbGSA=;
-        b=D3VfRvSFJwTHQDbWXI4JYwhZreZtDABZQBYkqD/wpnRBJDZrUdJFJTPiUyCuI4wngt
-         Ihe4euvyqC2uD/N9PUDsJAd71YIN4wW9jWDv6EavIHBomge+i3omVafGFWdHVmncEC8X
-         nU8guWqdnV+iiCMgLTygrZOAgBiza6/QndpYV/t4W88MgLAANI/q4HVHsLtnFITP5geR
-         crE+LZDrLjHmpSUKi5PU4ddxOIzBvfk3SqbJTaYZ/Hh2+ab/ghMpEpat+vyUiRs2dvaf
-         asdlFdMfk72RPvFxeAkb/YP3CBLxtOZV/SbP+gotM0sdyEoS0mJfbycgvuW6dp7XYKNq
-         2/lQ==;
+        fh=ToQl8o1yD47CrI9sMJgFgeBxX7hHjgY5004pv2ZriX4=;
+        b=A+L9hvm+hzMTa8fBL86Effk5cfiTWi5pH0yORLNgZZfihafbvlKD4Bjdk8EJJ+cy9Y
+         Lq8R0xrqMGQ+sxWNF5Tvwrvtc8j+MKEL43B0wtk8Fl2BvDdQDEqmktcWaBxsbnkCstC1
+         OZlMi5itkGiZvUsROnuSfyTN+JR6BNwkqkTIblfWnCh4Q+QM5n4uktgfv0YF/CmHoTbn
+         Rrz/bpUI+u4Y9y2THSN5c+9RWFZaY1p89iNV+wectrtboX5ZGZbXi0XwNXBN+R/cHHMU
+         F/6VsV5hozL55pdjL2ZrcKY7GCBBzslbiiPtfL+264FJ48GGj3L8lV3ZXmKIaHNyRNNs
+         ZGjg==;
         dara=google.com
 ARC-Authentication-Results: i=3; mx.google.com;
-       dkim=pass header.i=@serpro.gov.br header.s=default header.b=ajKOZV7m;
+       dkim=pass header.i=@serpro.gov.br header.s=default header.b=CfqB0hg7;
        arc=pass (i=2 spf=pass spfdomain=serpro.gov.br dkim=pass dkdomain=serpro.gov.br dmarc=pass fromdomain=serpro.gov.br);
        spf=pass (google.com: domain of guilherme.migliorini+caf_=rosaparksfree=gmail.com@ifc.edu.br designates 209.85.220.41 as permitted sender) smtp.mailfrom="guilherme.migliorini+caf_=rosaparksfree=gmail.com@ifc.edu.br";
        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=serpro.gov.br;
        dara=pass header.i=@gmail.com
 Return-Path: <guilherme.migliorini+caf_=rosaparksfree=gmail.com@ifc.edu.br>
 Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
-        by mx.google.com with SMTPS id 98e67ed59e1d1-2f7762c7475sor3168891a91.8.2025.01.17.16.55.21
+        by mx.google.com with SMTPS id d2e1a72fcca58-72dab9377e4sor1871628b3a.9.2025.01.18.00.36.18
         for <rosaparksfree@gmail.com>
         (Google Transport Security);
-        Fri, 17 Jan 2025 16:55:21 -0800 (PST)
+        Sat, 18 Jan 2025 00:36:20 -0800 (PST)
 Received-SPF: pass (google.com: domain of guilherme.migliorini+caf_=rosaparksfree=gmail.com@ifc.edu.br designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
 Authentication-Results: mx.google.com;
-       dkim=pass header.i=@serpro.gov.br header.s=default header.b=ajKOZV7m;
+       dkim=pass header.i=@serpro.gov.br header.s=default header.b=CfqB0hg7;
        arc=pass (i=2 spf=pass spfdomain=serpro.gov.br dkim=pass dkdomain=serpro.gov.br dmarc=pass fromdomain=serpro.gov.br);
        spf=pass (google.com: domain of guilherme.migliorini+caf_=rosaparksfree=gmail.com@ifc.edu.br designates 209.85.220.41 as permitted sender) smtp.mailfrom="guilherme.migliorini+caf_=rosaparksfree=gmail.com@ifc.edu.br";
        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=serpro.gov.br;
        dara=pass header.i=@gmail.com
-ARC-Seal: i=2; a=rsa-sha256; t=1737161721; cv=pass;
+ARC-Seal: i=2; a=rsa-sha256; t=1737189378; cv=pass;
         d=google.com; s=arc-20240605;
-        b=QGMOdIX1Ng4ML5BFHGGxYqIVbugF4UrbCsqm/ykk9m75TehSJpbWl+iZaZyhLXT7ci
-         Un645S6QCgHohRV52BAXmLbvh2QRuecDTpv2zLF8lRTPaUvA9cpc085LBT4en9732tww
-         bTDg55AMRcwCAtXOTLlPl3gVuxzqCbltSrcKfoVcDQaDFoo0hRX+49Vwn8Ou83JZXxQX
-         yLiKJAWNhot1yMDrQM+e2f1CKSxOu0P7HqDu4SGt2zwodmbv5Wr7zuuecd2pmUjbc3kj
-         PltMco/gPiZhj1z26Jj4yFKLOIs3SaFKqebIlvGl9sNAvwjMyOBWFubuhFt4C2yPIiZ+
-         NNTQ==
+        b=IausCMtJQDG9dofaqtcbzSWmMucWBEXIeRtifzogK5Z9pAYEPcr2AeUqmnKCr/w6Az
+         +7+9lJ08R7d6mXvpAe97pjGOsUBJthIyMsm44xS6rLhIeUFuWXoJSfDCs3I7IrJt22PZ
+         shz/7hHn3CHDFPmSyawdsZHyIaKU2VY0eohyNOAEhywMClXx/1xaqzu331m+dDX/Rn+0
+         2hA5zLEp+rAbeQuUhh6gB6jlkdl+r3JiB1qEUr3+NNN+rmtCTjby9w5iCNwo5DDWgzQI
+         wPqhOcZ5TCynavS4ZnIcOnH7C+/v9V4jbukWDknW5AH9TGpfQm21K/hlY26Kxz5+txI0
+         NOsg==
 ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
         h=content-transfer-encoding:importance:subject:date:to:reply-to:from
          :mime-version:dkim-signature:message-id:delivered-to;
         bh=QPmSASiIrTSiYiTGpo4oJtD3dP+Ex23gIOkC7bzRKGE=;
-        fh=gxS1ot9FdTvN4ihx/9vVwCvIUcKGAFZL7dCjb7HbGSA=;
-        b=ErgXIBVfv8oR7UXEHe+y7ciumnvs59bk0TeR8q1KwTOeU1yuALwY7+bvK6jKQF/X22
-         4ty/yQd8fhEBkiyoqXZvlAQ63JVjqSDy8vo+Sz3Y9YTQFz3wkF/iiBx8QVJPBMhurg1O
-         E+Aneg9MDeu3gRh57gYsolygkTV35wJlTM7qzUL9dCB48ODQI1N8kBo6Q3JpHxOS034q
-         ll4NkvOl7nmSHrvCjIthk15O59IVyP3B6CKOZxDGSjcmazKAbp4jRcMLFB5dByo7QGHK
-         6KqBqTcDNIZbDBJsagv6HQ9UTyA5Y4TMUH8lgchT76WpdAym5khZibpz7zpclUhOAa2u
-         XBpw==;
+        fh=ToQl8o1yD47CrI9sMJgFgeBxX7hHjgY5004pv2ZriX4=;
+        b=HrS4heBfWhbaRqXXerOFP7G3zoWWddwQ5vBCyK44c4iD0e8WKtQbCJCJX18z3kOAf6
+         WoYgNoOqgXGsKqKiAao2sG0yodWcMzOAz7G0b6mJJxjE2s2W4sejflTF57vuvFaJOwyX
+         DidjBxoVbv8hzuYknEqgUfRkAPW3FuurXUGUu+3SoZ4zdtcGlJGNMiN+52S7s8uiwmgl
+         GUt0s5xv7BclT245nJPDBQg8r3TdtpHr49N1tdhJjIj3VY4BDvUycThpMMJ6RphTo/XH
+         D5e1qMs9sbGCeTWZe5L+cP3oJLqmxVrLj51SH6lOBF9Zk+6YnbMXDBetjWFmX9OFHyp3
+         E42w==;
         dara=google.com
 ARC-Authentication-Results: i=2; mx.google.com;
-       dkim=pass header.i=@serpro.gov.br header.s=default header.b=ajKOZV7m;
-       spf=pass (google.com: domain of naoresponda@serpro.gov.br designates 161.148.21.215 as permitted sender) smtp.mailfrom=naoresponda@serpro.gov.br;
+       dkim=pass header.i=@serpro.gov.br header.s=default header.b=CfqB0hg7;
+       spf=pass (google.com: domain of naoresponda@serpro.gov.br designates 161.148.21.224 as permitted sender) smtp.mailfrom=naoresponda@serpro.gov.br;
        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=serpro.gov.br
 X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=1e100.net; s=20230601; t=1737161721; x=1737766521;
+        d=1e100.net; s=20230601; t=1737189378; x=1737794178;
         h=content-transfer-encoding:importance:subject:date:to:reply-to:from
          :mime-version:dkim-signature:message-id:delivered-to:x-forwarded-for
          :x-forwarded-to:x-gm-message-state:from:to:cc:subject:date
          :message-id:reply-to;
         bh=QPmSASiIrTSiYiTGpo4oJtD3dP+Ex23gIOkC7bzRKGE=;
-        b=lPOMHaIFoSZ2MvygL7XUet6OdsCqYduvw4w2oRNXbZJR5duXn3GxKZTMyZ30ZuFAUl
-         RvV9ekgYIgT6pTldkhRrV4L5x63v74SR0KcMadh7abd1d/wIUADqfYw5FIjtGf33h/G0
-         b7md7ubrKv/4vl73wfMkYrfBkBDzg/F9nT2Ff9RmY3SfPCujXb96YHbQBrjUxk+bct/y
-         klWCM+Cz/N7jSXmMomRLMIXo1CnyAr6LEgll5mfbj0U5Z87lP9ZEoDNE+s6t9RlsVVTb
-         NekMNPjNDMdqvsm+RPXVkbbfRqxMbOhJsJ95Wgv0fJ7yFkXWy4RbWycBy2Q1Bx/CIVlg
-         RvWQ==
-X-Forwarded-Encrypted: i=2; AJvYcCXjzGjPKYtb+LDKZtC3adiaupMM/LqwHLlF8a4/WF3XBj/IpZIQ/TcOS1/dV6Z3TyTw2qaBxlSyQqGe0q/l@gmail.com
-X-Gm-Message-State: AOJu0Yxye8GUOzOpr71AX5zDm7BHgWHTVpbRtaFpQvUkO0Pr6dAZ/+Nk
-	V5Fdndr/L/OtaLGKq0Ud0Bzy2Izzx4GpJ79s0HGDDdt1UHllOWUNDu6suWTmyrNRzzRatbjTB2C
-	dm76zR77QWNz/qnZTbvUwLM9UJjtfLpQfKPA+HdRqm1L39VR4VPmfLOL+QjPFN9JMbYeqjfLfAW
-	0S
-X-Received: by 2002:a17:90b:2805:b0:2ea:3f34:f18d with SMTP id 98e67ed59e1d1-2f782c8fd33mr7411425a91.10.1737161720997;
-        Fri, 17 Jan 2025 16:55:20 -0800 (PST)
+        b=PfKeruODlwIx2e9ZmdAgtYeFFJ/iWp8cCeljpcGO1xhLztt78hqi/wsUF1IHpqopyR
+         20U4UXxMhgDDO0xYpuueifk/EUz/EByqQzSuSaZupgZ2tHVxUIkoartbJBtCsuLLfRLt
+         +YXqblBJzKSJiwIA9d8T7HnsWLvzYr/edPYB9mVrV0QTl7vjYSIpkFdJ34XDSsIFFG1P
+         SrblVLzjeDxBaMU5NwZpuRpPVU9ktxacDaNN/U9ehlZp+UFzdJqT+MZH2f2cgFc2qdtN
+         wHzNctoSGPj1ZC1NROnY+xsbMajDk4quJ0VeZO716vvcBoRCepQaPeH3zHe6KkZdhpbB
+         +img==
+X-Forwarded-Encrypted: i=2; AJvYcCVHFLqj0aj8KnknpM3l7Yug2yfxQQglSdOZM9SygzpOhoGir/ySLFr/uA3/hzLZQLdOE1heec6Hy6V8fzbr@gmail.com
+X-Gm-Message-State: AOJu0YyUpTGigOT9TSegovIWxp23m9PtJD2XpoGSopvIC665qgPq5XJT
+	KR2y/1n0uNf0Fa/JBhKD5+9mxTbMf4gjG083OaovkJwTNWv0ZO1ox1PIZvZcpSvGx33I3rt7guV
+	5ZjRsKvTg/F3N0tgopUqRtEjJB0BqRQtiTeP5V9Xit8WYqJNweYpOBijc2B9F/rSpl6siS70jdB
+	S4
+X-Received: by 2002:a05:6a00:428d:b0:71e:4786:98ee with SMTP id d2e1a72fcca58-72dafae88b0mr7823910b3a.21.1737189377825;
+        Sat, 18 Jan 2025 00:36:17 -0800 (PST)
 X-Forwarded-To: rosaparksfree@gmail.com
 X-Forwarded-For: guilherme.migliorini@ifc.edu.br rosaparksfree@gmail.com
 Delivered-To: guilherme.migliorini@ifc.edu.br
-Received: by 2002:a05:6a10:f392:b0:5d3:80b9:aef3 with SMTP id z18csp725131pxu;
-        Fri, 17 Jan 2025 16:55:19 -0800 (PST)
-X-Google-Smtp-Source: AGHT+IFrg3t6XnQFjRQNEBznhTEzunQXcOAgjNHDtyvn/E2a0fjxDAgSzSC7CIrZTQwyC8X11IPS
-X-Received: by 2002:a17:90b:534b:b0:2ee:edae:75e with SMTP id 98e67ed59e1d1-2f782c92720mr6880207a91.13.1737161719184;
-        Fri, 17 Jan 2025 16:55:19 -0800 (PST)
-ARC-Seal: i=1; a=rsa-sha256; t=1737161719; cv=none;
+Received: by 2002:a05:6a10:f392:b0:5d3:80b9:aef3 with SMTP id z18csp863662pxu;
+        Sat, 18 Jan 2025 00:36:16 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFVsVRIeiBZzS0p7ifhRIGDL0JEBDmBasdOdt7+7WzwvF7btN/u3Egq54prAnPzBH8fJl/g
+X-Received: by 2002:a05:6a20:7816:b0:1e3:da8c:1f3b with SMTP id adf61e73a8af0-1eb2158d04emr7094716637.28.1737189375858;
+        Sat, 18 Jan 2025 00:36:15 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1737189375; cv=none;
         d=google.com; s=arc-20240605;
-        b=HKKzrMITHwJ3hD7kFwJNsIEaF3gdoRxaVJ5NI6DsNlEtDheHzYYtOQSym7tsy6+etl
-         yaEPnwdHDfWCBb+CCY1OBCgET6c7G/Ju0RDSWOC89tnfMjOtEfiWfHURRAJK4yu98PFL
-         zETrdBtFx7om7pSMgwZN3ln9rceSXj+cmRTOLzbKuCPcZt5InRyCkOznW/hxy5E2aKwS
-         s/oO8yfN4N+xzvhIAfQGzTZqAYA/Di8dYVZuMVJ7wF4KNfuD9gn56p3oguaow7ebXaTn
-         LcCkH94n5eTIKOOt4+LanOqB0ngTCZimh2Nok79FRWI3McPKksa8/Ze0hf9CSpug2QC6
-         Rg3g==
+        b=hPIgcjU05Y07+sRWOYbaZkJgQRKPvT7KKE+w22ft5vn+zqoabMu1h1iy7FLV6xriDa
+         1W4TfWlTCEq1+UtrHpjoYIs7wKXoHWByN13Xfa6ZcDirxNvvgO7MR1iOw0NjUwqFEU1U
+         x58ycRMqq1MPFxHTxrAUsgHZ4cCPQutaKErco4q6nerwjiLCeG/W53/5nAYGrVN7K9Iv
+         mo2dmYHpiPMWeDAN8VrDDgYIRSkImJiBZFNoK7aFzH8pEiL7G3a2gMl+i3oeZJjkdZiL
+         JnnTeddxvAGRd6PUr9Vey/h+B7gaw8aiqEx9W6o0XeNieCyo9EKmEr64cuGHnBKQUPsn
+         PR4A==
 ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
         h=content-transfer-encoding:importance:subject:date:to:reply-to:from
          :mime-version:dkim-signature:message-id;
         bh=QPmSASiIrTSiYiTGpo4oJtD3dP+Ex23gIOkC7bzRKGE=;
         fh=p4ma+/jPy6EZXu98nRqypEptlJVbd+8B4SRIc4BII54=;
-        bô4mER1Q5WdYu+3dgVj2DN5UvV4WXkKA7U90NKtzIzYnZJ2j5rc9gvYtSBl0rQguGP
-         ylO9b3BOylP8+76XT8IKHYxqgWJAva416fg2bzVmiKjw+Jw5yDlpbKIp85+q0N1k09uG
-         SwCHjFewvhA5dGWYRAvSV9YibHIqH+oX3SO0iQCAfbJSzgXFfJ39lQe6KGswkKSXTZ9V
-         AJYTPuoJTFG65HAQzdq7IOpI4oWwirBBy6QFZWrmZn55UjsDUKh3aO7In3luaLiMhAo8
-         b2X/EJ8vnrZKPuCpfrSWmm0Y4bS8UFI2ahi5EgGUvJAD6K6LsgYqFWGIlqxuQINgtTlm
-         tslQ==;
+        b=bzbx+DOdvUwwoEroz3Hd0UDkMSVlFinOWL+QuGNvvNJ1HCMiaeHb7W2sHlQMoKQfbA
+         +nVavB60L7+q6djFZmqcHFbBxEO40d9yi+jvAs/41asjWQ7Mef7mWkgdI2kTEHBycqjT
+         lA2KG01/bOxQYWY7yoJ3ZQ00Bt/H4cRvEsiucZmSBvSON5V52oflE1rcJPTQT1hT/SH4
+         TlozSbwSPQyT6VDKj1oEm81KptBvZPUoei7KEse1DFFJMCzwcTp9BpRjq0kzGEgGR3VX
+         YR1dUoACKM7N+r5sQtfOqK8dnFRve02f/ym23P9ZlGlmWv8WxuUxny9xQyMsSChL2htC
+         GJBQ==;
         dara=google.com
 ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@serpro.gov.br header.s=default header.b=ajKOZV7m;
-       spf=pass (google.com: domain of naoresponda@serpro.gov.br designates 161.148.21.215 as permitted sender) smtp.mailfrom=naoresponda@serpro.gov.br;
+       dkim=pass header.i=@serpro.gov.br header.s=default header.b=CfqB0hg7;
+       spf=pass (google.com: domain of naoresponda@serpro.gov.br designates 161.148.21.224 as permitted sender) smtp.mailfrom=naoresponda@serpro.gov.br;
        dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=serpro.gov.br
 Return-Path: <naoresponda@serpro.gov.br>
-Received: from masterapl.serpro.gov.br (mli-18.serpro.gov.br. [161.148.21.215])
-        by mx.google.com with ESMTPS id d9443c01a7336-21c2ce9c67asi37203115ad.107.2025.01.17.16.55.18
+Received: from masterapl.serpro.gov.br (mli-13.serpro.gov.br. [161.148.21.224])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-72dab9c95fdsi5050724b3a.246.2025.01.18.00.36.14
         for <guilherme.migliorini@ifc.edu.br>
         (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
-        Fri, 17 Jan 2025 16:55:19 -0800 (PST)
-Received-SPF: pass (google.com: domain of naoresponda@serpro.gov.br designates 161.148.21.215 as permitted sender) client-ip=161.148.21.215;
-Message-ID: <678afbf7.170a0220.320ce4.74e2SMTPIN_ADDED_BROKEN@mx.google.com>
-X-Google-Original-Message-ID: <2AC49C35-CB0B-A44A-8B7A-7961362E7420>
+        Sat, 18 Jan 2025 00:36:15 -0800 (PST)
+Received-SPF: pass (google.com: domain of naoresponda@serpro.gov.br designates 161.148.21.224 as permitted sender) client-ip=161.148.21.224;
+Message-ID: <678b67ff.050a0220.1f98c0.c082SMTPIN_ADDED_BROKEN@mx.google.com>
+X-Google-Original-Message-ID: <EA291668-2AE1-594A-8C6E-7115E9B1145E>
 Received: from masterapl.serpro.gov.br (localhost.localdomain [127.0.0.1])
-	by masterapl.serpro.gov.br (Postfix) with ESMTP id E408548F9DE
-	for <guilherme.migliorini@ifc.edu.br>; Fri, 17 Jan 2025 21:55:16 -0300 (-03)
+	by masterapl.serpro.gov.br (Postfix) with ESMTP id 8F857686640
+	for <guilherme.migliorini@ifc.edu.br>; Sat, 18 Jan 2025 05:36:13 -0300 (-03)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=serpro.gov.br;
-	s=default; t=1737161716;
+	s=default; t=1737189373;
 	bh=QPmSASiIrTSiYiTGpo4oJtD3dP+Ex23gIOkC7bzRKGE=;
 	h=From:Reply-To:To:Date:Subject;
-	b=ajKOZV7mwZRK1RPyOMQesrzva/FhJzlr5jrIk5GJdcChi1Jd1KxdoOjTgJXohmG+N
-	 Xyv8ANedFXZHLalE87RspWJ8MZYeSH/dN2xCGvqiTUq1q0iKgPAPULjtxLYtXj+nFX
-	 xSgRFBKbL+NN5QlXwHsEatTBahnM4qbAwNJc/dxM=
+	b=CfqB0hg7z0LTPcr1b+Wgo/ID7tX5MqoWXgLg4K6xpvbeBL4nFvvEJFP3mqylCCbTo
+	 kwGu5/l0h0nc8MHlDYxKPd+vGbrmZc/YaLjnjXUQUO6GA15DfKSa3Sp6pBX82wQb3T
+	 cbwmmJq+nJUPRHKTUSylAcw2jHF5xz2w0nchfU98=
 X-HSC-Mail_Inspector-IP: 161.148.236.206
 Received: from dfcdsrv1695.brcddom0003.serpro (unknown [161.148.236.206])
-	by masterapl.serpro.gov.br (Postfix) with ESMTP id F02F848F9DE
-	for <guilherme.migliorini@ifc.edu.br>; Fri, 17 Jan 2025 21:55:11 -0300 (-03)
+	by masterapl.serpro.gov.br (Postfix) with ESMTP id 59452686640
+	for <guilherme.migliorini@ifc.edu.br>; Sat, 18 Jan 2025 05:36:10 -0300 (-03)
 MIME-Version: 1.0
 From:  
  =?utf-8?Q?=22SERPRO=22?= <naoresponda@serpro.gov.br>
@@ -149,15 +149,15 @@ Reply-To:
  =?utf-8?Q?=22SERPRO=22?= <naoresponda@serpro.gov.br>
 To:  
  =?utf-8?Q?=22Guilherme=20IFC=22?= <guilherme.migliorini@ifc.edu.br>
-Date:  Fri, 17 Jan 2025 21:55:12 -0300
+Date:  Sat, 18 Jan 2025 05:36:10 -0300
 Subject: 
  =?utf-8?Q?Restos=20=C3=A0=20pagar=20=28RAP=29=20-=20Contratos?=
 Importance: normal
 Content-Type: text/html;
      charset=utf-8
 Content-Transfer-Encoding: Base64
-X-HSC-Mail_Inspector-Point: 10
-X-HSC-Mail_Inspector-ID: F02F848F9DE.A662E
+X-HSC-Mail_Inspector-Point: 5
+X-HSC-Mail_Inspector-ID: 59452686640.A26D0
 X-Serpro-APP-HSC_MailInspector: HSC Mailinspector: Mensagem nao scaneada
 X-Serpro-APP-HSC_MailInspector-SpamCheck: 
 X-Serpro-APP-HSC_MailInspector-From: naoresponda@serpro.gov.br
